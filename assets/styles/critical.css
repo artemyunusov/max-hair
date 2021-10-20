@@ -157,6 +157,10 @@ p {
   transition: all .3s ease-in-out;
 }
 
+body {
+  background-color: aqua;
+}
+
 .intro {
   height: 100vh;
   padding-bottom: 10rem;
@@ -168,27 +172,27 @@ p {
 }
 
 .intro-wrap {
-  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .intro-img {
-  position: absolute;
-  right: 150px;
-  top: 60%;
-  -webkit-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-img-pos {
+  margin-top: 15rem;
 }
 
 .intro-img-pos img {
-  width: 364px;
-  height: 603px;
+  height: 650px;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -246,6 +250,14 @@ p {
 .intro-btn-d {
   background-color: #555;
   color: #fff;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
 }
 
 .header {

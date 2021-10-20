@@ -7,16 +7,14 @@ window.onload = function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1000,
         settings: {
-          centerPadding: '0',
           slidesToShow: 3
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 650,
         settings: {
-          centerPadding: '0',
           slidesToShow: 1
         }
       }

@@ -70,6 +70,32 @@
 	
 	<!-- <a href="https://www.youtube.com/watch?v=jnLSYfObARA" class="lte-video-popup lte-style-bg swipebox" style="background-image: url(http://calmes.like-themes.com/wp-content/uploads/2021/01/video-bg.jpg)"></a> -->
 	
+	<style>
+	  
+	  .burger,
+	  .nav-mob,
+	  .body-mask{
+	
+	    opacity: 0;
+	    visibility: hidden;
+	    pointer-events: none;
+	    cursor: pointer;
+	  }
+	
+	</style>
+	  
+	<style>
+	
+	  .form-modal-wrap,
+	  .form-modal-mask{
+	
+	    opacity: 0;
+	    visibility: hidden;
+	    pointer-events: none;
+	  }
+	  
+	</style>
+	
 	<section>
 		<div class="intro">
 			<div class="container">
@@ -829,6 +855,122 @@
 		</div>
 	</section><!-- people -->
 	
+	
+	<div class="form-modal-wrap">
+	  <form action="POST" class="form-modal">
+	
+	    <!-- Hidden Required Fields -->
+	    <input type="hidden" name="project_name" value="username">
+	    <input type="hidden" name="admin_email" value="uzb_trcargo@mail.ru">
+	    <input type="hidden" name="form_subject" value="usercomment">
+	    <!-- END Hidden Required Fields -->
+	
+	    <input type="text" class="form-modal-input" name="username" id="username" placeholder="Ваше имя">
+	    <input type="text" class="form-modal-input" name="userphone" id="userphone" placeholder="Ваш телефон">
+	    <textarea rows="4" type="text" class="form-modal-textarea" name="usercomment" id="usercomment" placeholder="Оставьте отзыв"></textarea>
+	    <input class="form-modal-submit" type="submit" value="Отправить и перейти в калькулятор">
+	    
+	    <div class="form-modal-mask-close">
+	      <span class="form-modal-close-icon form-modal-close-icon-1"></span>
+	      <span class="form-modal-close-icon form-modal-close-icon-2"></span>
+	    </div>
+	
+	  </form>
+	</div>
+	
+	<div class="burger">
+	  <div class="burger-icon">
+	    <div class="burger-icon-wrap">
+	      <span class="burger-icon-item burger-icon-item-1"></span>
+	      <span class="burger-icon-item burger-icon-item-2"></span>
+	      <span class="burger-icon-item burger-icon-item-3"></span>
+	    </div>
+	  </div>
+	</div><!-- burger -->
+	
+	<div class="body-mask"></div>
+	
+	<div class="nav-mob">
+	  
+	  <nav class="nav-fixed">
+	    <ul class="nav-fixed-list">
+	      <li class="nav-fixed-item">
+	        <a class="nav-fixed-link" href="#home">
+	          Главная
+	        </a>
+	      </li>
+	      <li class="nav-fixed-item">
+	        <a class="nav-fixed-link" href="#about">
+	          О Нас
+	        </a>
+	      </li>
+	      <li class="nav-fixed-item">
+	        <a class="nav-fixed-link" href="#services">
+	          Сервисы
+	        </a>
+	      </li>
+	      <li class="nav-fixed-item">
+	        <a class="nav-fixed-link" href="#news">
+	          Новости
+	        </a>
+	      </li>
+	      <li class="nav-fixed-item">
+	        <a class="nav-fixed-link" href="#contacts">
+	          Контакты
+	        </a>
+	      </li>
+	      <li class="nav-fixed-item nav-fixed-pos">
+	        <span class="nav-fixed-btn">
+	          языки
+	        </span>
+	
+	        <ul class="nav-fixed-sub">
+	          <li>
+	            <a class="nav-fixed-ru" href="index.html">
+	              ru
+	              <span>
+	                <svg class="svg" width="20" height="20">
+	                  <use xlink:href="#ru">
+	                  </use>
+	                </svg>
+	              </span>
+	            </a>
+	          </li>
+	          <li>
+	            <a class="nav-fixed-en" href="logistic-uz.html">
+	              en
+	              <span>
+	                <svg class="svg" width="20" height="20">
+	                  <use xlink:href="#en">
+	                  </use>
+	                </svg>
+	              </span>
+	            </a>
+	          </li>
+	          <li>
+	            <a class="nav-fixed-uz" href="logistic-uz.html">
+	              uz 
+	              <span>
+	                <svg class="svg" width="20" height="20">
+	                  <use xlink:href="#uz">
+	                  </use>
+	                </svg>
+	              </span>
+	            </a>
+	          </li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </nav>
+	</div><!-- nav-mob -->
+	
+	<div class="to-top">
+	  <div class="to-top-wrap">
+	    <span class="to-top-item to-top-item-1"></span>
+	    <span class="to-top-item to-top-item-2"></span>
+	  </div>
+	</div><!-- to-top -->
+	
 
   <footer class="footer">
     <div class="footer-outer">
@@ -934,10 +1076,13 @@
 			loadStyle("./assets/styles/styles.min.css");
 
 	</script>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/burger.js"></script>
+  <script src="./assets/js/form.js"></script>
+  <script src="./assets/js/to-top.js"></script>
 
 </body>
 
